@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpresionesRegulares</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var banda = 'AD/DC';
+        var regExp = /\//g; //con la contra barra se anula el caracter especial y lo pasa a literal
+        //en este caso es la "/"
+        console.log(banda.search(regExp)); //busca e indica el indice del caracter primero que coincide
+
+        var texto = 'hola mundo';
+        var regExp2 = /[a-z]$/g; //expresion regular donde comprueba todas las letras estan en minuscula
+        //el dolar significa que acaba en minuscula
+        console.log(regExp2.test(texto));//test comprueba si hay o no en el string
+        
+        var regExp2 = /^[a-z]$/g; //eelevado significa que tambien empieza por minuscala
+        //el dolar significa que no hay mas despues
+
+        var texto2 = 'hola';
+        var regExp3 = /hol./g;//el puento indica que 'hol' exite cualquier caracte despues
+        console.log(regExp3.test(texto2));
+
+        var texto4 = 'bienvenidos';
+        var regExp4 = /s+$/gi;//comprueba si acaba en 's', la 'i' significa que da igual si es minuscula o mayuscula
+        console.log(regExp4.test(texto4));
+
+    </script>
+</body>
+</html>

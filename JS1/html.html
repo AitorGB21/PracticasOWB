@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica1numeros</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        console.log('Ejercicio 1');
+        console.log('A cada uno le toca pagar ' + 102 / 6 + ' euros');
+        console.log('Ejercicio 2');
+        const MOVIL = 300;
+        const CASCOS = 30;
+        const FUNDA = 10;
+        const DESCUENTO = 10;
+        const SUBTOTAL = MOVIL + CASCOS + FUNDA;
+        const DESCUENTO_DEL_SUBTOTAL = DESCUENTO/100 * SUBTOTAL;
+        const PRECIO_FINAL = SUBTOTAL - DESCUENTO_DEL_SUBTOTAL ;    
+        console.log('DESCUENTO ES DEL ' + DESCUENTO + '%, EL SUBTOTAL ES ' + SUBTOTAL 
+        + ' EUROS Y EL PRECIO FINAL ES ' + PRECIO_FINAL + ' EUROS');
+    </script>
+</body>
+</html>

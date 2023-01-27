@@ -1,0 +1,46 @@
+td,th{
+    border: 1px solid;
+}
+
+tbody tr td:first-child{
+    background-color: green;
+}
+
+tbody tr:nth-child(3) th:nth-child(2){
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+
+a:link{
+    color: green;
+}
+
+tr td:last-child:hover,
+tr th:last-child:hover{
+    font-size: 2em;
+}
+
+table thead tr:first-child th::first-letter{
+    font-size: 2em;
+}
+
+input:required{
+    border: 2px solid red;
+    padding: 5px;
+}
+
+label::after {
+    color: red;
+    content: "*";
+  }

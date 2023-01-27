@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plantilla Curso jQuery - OpenWebinars</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Alumno</th>
+                <th>Examen 1</th>
+                <th>Examen 2</th>
+                <th>Examen 3</th>
+                <th>Nota evaluación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepe Pérez</td>
+                <td>5</td>
+                <td>10</td>
+                <td>3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ana Ramírez</td>
+                <td>6</td>
+                <td>3</td>
+                <td>5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Rosa Torres</td>
+                <td>9</td>
+                <td>3</td>
+                <td>9</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sara Gallardo</td>
+                <td>8</td>
+                <td>8</td>
+                <td>6</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Cuerpo del script en el que trabajaremos -->
+    <script>
+        // Cuando el documento esté listo $(document).ready(function() {});
+        $(function () {
+            var final = 0
+            $("tbody tr").each(function(index){
+                let ex1 = $("tbody tr:nth-child(" + (index + 1) + ") td").eq(1).text();
+                let ex2 = $("tbody tr:nth-child(" + (index + 1) + ") td").eq(2).text();
+                let ex3 = $("tbody tr:nth-child(" + (index + 1) + ") td").eq(3).text();
+
+                final = (parseFloat(ex1) + parseFloat(ex2) + parseFloat(ex3)) / 4
+
+                $("tbody tr:nth-child(" + (index + 1) + ") td:last").text(final)
+
+                if (final >= 5){
+                    $(this).css("color","green")
+                }
+                else{
+                    $(this).css("color","red")
+                }
+            });
+          });
+
+    </script>
+</body>
+
+</html>

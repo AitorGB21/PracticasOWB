@@ -1,0 +1,29 @@
+body {
+    background-color: grey;
+}
+
+div.fixed {
+    position: fixed;
+    margin-left: 0px;
+    border: 1px solid black;
+    width: 80px;
+    text-align: center;
+}
+
+a.a1 {
+    text-decoration: none;
+    color: black;
+}
+
+div.main{
+    position: relative;
+    background-color: black;
+}
+
+main.esta{
+    background-color: lightgreen;
+    height: 150px;
+    margin-top: -75px; 
+    position: absolute;
+    top: 50%;
+}

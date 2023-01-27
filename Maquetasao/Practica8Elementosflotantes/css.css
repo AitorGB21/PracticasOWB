@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.main{
+    background-color: rgb(253, 253, 253);
+    margin: 20px auto;
+    height: 800px;
+    width: 90%;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0% 20px 0%;
+}
+
+.navegacion{
+    background-color: black;
+    margin-bottom: 30px;
+    position: relative;
+    top: 0px;
+}
+
+.nav1{
+    color: aliceblue;
+    display: inline-block;
+    padding: 0px 250px 0px 5px;
+    font-size: large;
+}
+
+.container{
+    height: 711px;
+    position: relative;
+}
+
+.sidebar{
+    background-color: black;
+    width: 15%;
+    height: 90%;
+    float: left;
+    margin-right: 5%;
+}
+
+.divsidebar{
+    padding: 2px 12px;
+    color: aliceblue;
+    font-size: large;
+}
+
+.divsidebar p{
+    margin: 13px 0px;
+}
+
+.cuadro{
+    float: left;
+    border: 1px solid black;
+    border-radius: 5%;
+    height: 50%;
+    width: 26%;
+    text-align: center;
+    right: 0px;
+    overflow-y: auto;
+    padding: 2px 2px;
+}
+
+.cuadro img{
+    height: 200px;
+    width: 150px;
+    margin: 15px 0px;
+}
+
+.texto{
+    float: left;
+    overflow-y: auto;
+    right: 0px;
+    width: 26%;
+    font-size: larger;
+    margin: 10px 0px;
+}
+
+footer{
+    background-color: rgb(202, 194, 194);
+    clear: both;
+    bottom: 0px;
+    text-align: center;
+    padding: 5px 2px;
+}

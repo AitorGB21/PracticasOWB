@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 style="text-align: center;">HOJA DE INSCRIPCION<br/>EN LOS CICLOS FROMETIVOS DE GRADO SUPERIOR</h1>
+    <form method="post" action="Resultado.html">
+        <fieldset style="background-color:#ccc6c6">
+            <legend style="background-color: white;border: 2px solid black">Datos Personales</legend>
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><label for="apellidos">Apellidos:</label></td>
+                    <td><label for="DNI">DNI</label></td>
+                </tr>
+                <tr>
+                    <td><input style="width: 220px;" type="text" name="nombre"/></td>
+                    <td><input type="text" name="apellidos"/></td>
+                    <td><input type="text" name="DNI"/></td>
+                </tr>
+                <tr>
+                    <td><label for="localidad">Localidad Nacimiento</label></td>
+                    <td><label for="provincia">Provincia</label></td>
+                    <td><label for="fecha">Fecha Nacimiento</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="localidad"/></td>
+                    <td><select name="provincia">
+                        <option>Toledo</option>
+                        <option>Valladolid</option>
+                        <option>Albacete</option>
+                        <option>Ciudad Real</option>
+                        <option>Cuenca</option>
+                        </select>
+                        </td>
+                    <td><input type="date"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="direccion">Direccion:</label></td>
+                    <td><label for="codigopostal">Codigo Postal:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input style="width: 310px;" type="text" name="direccion"/></td>
+                    <td><input type="text" name="codigopostal"/></td>
+                </tr>            
+            </table>
+        </fieldset>
+        <fieldset style="background-color:rgb(243, 224, 188)">
+            <legend style="background-color: white;border: 2px solid black">Forma de Acceso</legend>
+            <ul style="list-style-type: none;">
+                <li><input type="radio" name="modo" value="directo"/>Direct
+                <ul style="list-style-type: none;">
+                    <li><input type="radio" name="etapa" value="logse"/>Bachillerato LOGSE. Modalidad <input type="text" name="logsemodalida"></li>
+                    <li><input type="radio" name="etapa" value="experimental"/>Bachillerato Experimental</li>
+                    <li><input type="radio" name="etapa" value="COU"/>COU, Opcion <input type="text" name="COUopcion"></li>
+                    <li><input type="radio" name="etapa" value="fp2"/>FP2</li>
+                    <li><input type="radio" name="etapa" value="otros"/>Otros (especifique) <input type="text" name="otrosespecificado"></li>
+                </ul>
+            </li>
+            <li><input type="radio" name="modo" value="prueba"/>Prueba Libre</li>
+            </ul>
+        </fieldset>
+        <fieldset style="background-color:#f56b6b">
+            <legend style="background-color: white;border: 2px solid black">Documentos Adjuntandos</legend> 
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Documentos" value="DNI_Copia">Fotocopia DNI
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Documentos" style="margin-left: 80px;" value="certificado">Certificado Academico
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="Documentos">Otros documentos (especifique) <input type="text" value="Otros_documentos">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <button type="submit" style="margin-top: 20px;" value="Enviar solicitud">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
